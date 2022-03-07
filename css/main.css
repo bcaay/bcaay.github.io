@@ -18,9 +18,6 @@
   --btn-default-hover-color: #222;
   --btn-default-hover-border-color: #222;
 }
-uplogo {
-  width: 10%;
-}
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -2285,4 +2282,10 @@ embed {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+.uplogo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 10%;
 }
