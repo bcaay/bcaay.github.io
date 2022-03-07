@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hans">
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
@@ -17,18 +17,18 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"bcaay.github.io","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":"enable"},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+    var CONFIG = {"hostname":"bcaay.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":"enable"},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="Linux常用命令&#x2F;BINawkawk命令格式和选项   语法形式  12awk [options] &amp;#x27;script&amp;#x27; var&#x3D;value file(s)awk [options] -f scriptfile var&#x3D;value file(s)  常用命令选项  -F fs fs指定输入分隔符，fs可以是字符串或正则表达式，如-F: -v var&#x3D;value">
+  <meta name="description" content="Linux常用命令awkawk命令格式和选项   语法形式  12awk [options] &amp;#x27;script&amp;#x27; var&#x3D;value file(s)awk [options] -f scriptfile var&#x3D;value file(s)  常用命令选项  -F fs fs指定输入分隔符，fs可以是字符串或正则表达式，如-F: -v var&#x3D;value 赋值一个用户自定">
 <meta property="og:type" content="article">
-<meta property="og:title" content="川味毛血旺的个人博客">
+<meta property="og:title" content="Linux常用命令">
 <meta property="og:url" content="https://bcaay.github.io/2022/03/07/Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4.html">
 <meta property="og:site_name" content="川味毛血旺的个人博客">
-<meta property="og:description" content="Linux常用命令&#x2F;BINawkawk命令格式和选项   语法形式  12awk [options] &amp;#x27;script&amp;#x27; var&#x3D;value file(s)awk [options] -f scriptfile var&#x3D;value file(s)  常用命令选项  -F fs fs指定输入分隔符，fs可以是字符串或正则表达式，如-F: -v var&#x3D;value">
-<meta property="og:locale" content="en_US">
+<meta property="og:description" content="Linux常用命令awkawk命令格式和选项   语法形式  12awk [options] &amp;#x27;script&amp;#x27; var&#x3D;value file(s)awk [options] -f scriptfile var&#x3D;value file(s)  常用命令选项  -F fs fs指定输入分隔符，fs可以是字符串或正则表达式，如-F: -v var&#x3D;value 赋值一个用户自定">
+<meta property="og:locale">
 <meta property="article:published_time" content="2022-03-07T07:38:46.018Z">
-<meta property="article:modified_time" content="2022-01-10T07:41:25.542Z">
+<meta property="article:modified_time" content="2022-03-07T09:32:48.645Z">
 <meta property="article:author" content="川味毛血旺">
 <meta name="twitter:card" content="summary">
 
@@ -41,11 +41,11 @@
     sidebar: "",
     isHome : false,
     isPost : true,
-    lang   : 'en'
+    lang   : 'zh-Hans'
   };
 </script>
 
-  <title> | 川味毛血旺的个人博客</title>
+  <title>Linux常用命令 | 川味毛血旺的个人博客</title>
   
 
 
@@ -118,6 +118,16 @@
     <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
 
   </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags</a>
+
+  </li>
         <li class="menu-item menu-item-categories">
 
     <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories</a>
@@ -155,7 +165,7 @@
     
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-Hans">
     <link itemprop="mainEntityOfPage" href="https://bcaay.github.io/2022/03/07/Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -169,7 +179,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          
+          Linux常用命令
         </h1>
 
         <div class="post-meta">
@@ -178,16 +188,10 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
+              
 
-              <time title="Created: 2022-03-07 15:38:46" itemprop="dateCreated datePublished" datetime="2022-03-07T15:38:46+08:00">2022-03-07</time>
+              <time title="Created: 2022-03-07 15:38:46 / Modified: 17:32:48" itemprop="dateCreated datePublished" datetime="2022-03-07T15:38:46+08:00">2022-03-07</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2022-01-10 15:41:25" itemprop="dateModified" datetime="2022-01-10T15:41:25+08:00">2022-01-10</time>
-              </span>
 
           
 
@@ -200,7 +204,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="Linux常用命令"><a href="#Linux常用命令" class="headerlink" title="Linux常用命令"></a>Linux常用命令</h1><h2 id="x2F-BIN"><a href="#x2F-BIN" class="headerlink" title="&#x2F;BIN"></a>&#x2F;BIN</h2><h3 id="awk"><a href="#awk" class="headerlink" title="awk"></a><strong>awk</strong></h3><h4 id="awk命令格式和选项"><a href="#awk命令格式和选项" class="headerlink" title="awk命令格式和选项"></a>awk命令格式和选项</h4><blockquote>
+        <h1 id="Linux常用命令"><a href="#Linux常用命令" class="headerlink" title="Linux常用命令"></a>Linux常用命令</h1><h3 id="awk"><a href="#awk" class="headerlink" title="awk"></a><strong>awk</strong></h3><h4 id="awk命令格式和选项"><a href="#awk命令格式和选项" class="headerlink" title="awk命令格式和选项"></a>awk命令格式和选项</h4><blockquote>
 <hr>
 </blockquote>
 <p>语法形式</p>
@@ -215,6 +219,8 @@
 <li>-m[fr] val 对val值设置内在限制，-mf选项限制分配给val的最大块数目；-mr选项限制记录的最大数目。这两个功能是Bell实验室版awk的扩展功能，在标准awk中不适用。</li>
 </ul>
 </blockquote>
+<span id="more"></span>
+
 <h4 id="awk模式和操作"><a href="#awk模式和操作" class="headerlink" title="awk模式和操作"></a><strong>awk模式和操作</strong></h4><blockquote>
 <hr>
 <p><strong>模式</strong><br>模式可以是以下任意一个：</p>
@@ -653,11 +659,11 @@
 
         
     <div class="post-nav">
-      <div class="post-nav-item">
-    <a href="/2022/03/07/1.html" rel="prev" title="111">
-      <i class="fa fa-chevron-left"></i> 111
-    </a></div>
       <div class="post-nav-item"></div>
+      <div class="post-nav-item">
+    <a href="/2022/03/07/VPN%E6%90%AD%E5%BB%BA.html" rel="next" title="VPN搭建">
+      VPN搭建 <i class="fa fa-chevron-right"></i>
+    </a></div>
     </div>
       </footer>
     
@@ -716,7 +722,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4"><span class="nav-number">1.</span> <span class="nav-text">Linux常用命令</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#x2F-BIN"><span class="nav-number">1.1.</span> <span class="nav-text">&#x2F;BIN</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#awk"><span class="nav-number">1.1.1.</span> <span class="nav-text">awk</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#awk%E5%91%BD%E4%BB%A4%E6%A0%BC%E5%BC%8F%E5%92%8C%E9%80%89%E9%A1%B9"><span class="nav-number">1.1.1.1.</span> <span class="nav-text">awk命令格式和选项</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#awk%E6%A8%A1%E5%BC%8F%E5%92%8C%E6%93%8D%E4%BD%9C"><span class="nav-number">1.1.1.2.</span> <span class="nav-text">awk模式和操作</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#awk%E8%84%9A%E6%9C%AC%E5%9F%BA%E7%A1%80%E7%BB%93%E6%9E%84"><span class="nav-number">1.1.1.3.</span> <span class="nav-text">awk脚本基础结构</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#awk%E5%86%85%E7%BD%AE%E5%8F%98%E9%87%8F%EF%BC%88%E9%A2%84%E5%AE%9A%E4%B9%89%E5%8F%98%E9%87%8F%EF%BC%89"><span class="nav-number">1.1.1.4.</span> <span class="nav-text">awk内置变量（预定义变量）</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#sh"><span class="nav-number">1.1.2.</span> <span class="nav-text">sh</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#cat"><span class="nav-number">1.1.3.</span> <span class="nav-text">cat</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#chown"><span class="nav-number">1.1.4.</span> <span class="nav-text">chown</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#date"><span class="nav-number">1.1.5.</span> <span class="nav-text">date</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#dmesg"><span class="nav-number">1.1.6.</span> <span class="nav-text">dmesg</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#find"><span class="nav-number">1.1.7.</span> <span class="nav-text">find</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#env"><span class="nav-number">1.1.8.</span> <span class="nav-text">env</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#egrep"><span class="nav-number">1.1.9.</span> <span class="nav-text">egrep</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#hostname"><span class="nav-number">1.1.10.</span> <span class="nav-text">hostname</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#mknod"><span class="nav-number">1.1.11.</span> <span class="nav-text">mknod</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#mktemp"><span class="nav-number">1.1.12.</span> <span class="nav-text">mktemp</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#more"><span class="nav-number">1.1.13.</span> <span class="nav-text">more</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#netstat"><span class="nav-number">1.1.14.</span> <span class="nav-text">netstat</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#stty"><span class="nav-number">1.1.15.</span> <span class="nav-text">stty</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#touch"><span class="nav-number">1.1.16.</span> <span class="nav-text">touch</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#uname"><span class="nav-number">1.1.17.</span> <span class="nav-text">uname</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#basename"><span class="nav-number">1.1.18.</span> <span class="nav-text">basename</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#chgrp"><span class="nav-number">1.1.19.</span> <span class="nav-text">chgrp</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#cp"><span class="nav-number">1.1.20.</span> <span class="nav-text">cp</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#df"><span class="nav-number">1.1.21.</span> <span class="nav-text">df</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#grep"><span class="nav-number">1.1.22.</span> <span class="nav-text">grep</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ipcalc"><span class="nav-number">1.1.23.</span> <span class="nav-text">ipcalc</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#login"><span class="nav-number">1.1.24.</span> <span class="nav-text">login</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#mount"><span class="nav-number">1.1.25.</span> <span class="nav-text">mount</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ping"><span class="nav-number">1.1.26.</span> <span class="nav-text">ping</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#rm"><span class="nav-number">1.1.27.</span> <span class="nav-text">rm</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#sleep"><span class="nav-number">1.1.28.</span> <span class="nav-text">sleep</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#sync"><span class="nav-number">1.1.29.</span> <span class="nav-text">sync</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#chmod"><span class="nav-number">1.1.30.</span> <span class="nav-text">chmod</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#cut"><span class="nav-number">1.1.31.</span> <span class="nav-text">cut</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#echo"><span class="nav-number">1.1.32.</span> <span class="nav-text">echo</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#fgrep"><span class="nav-number">1.1.33.</span> <span class="nav-text">fgrep</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#gzip"><span class="nav-number">1.1.34.</span> <span class="nav-text">gzip</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#kill"><span class="nav-number">1.1.35.</span> <span class="nav-text">kill</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ls"><span class="nav-number">1.1.36.</span> <span class="nav-text">ls</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#mv"><span class="nav-number">1.1.37.</span> <span class="nav-text">mv</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ps"><span class="nav-number">1.1.38.</span> <span class="nav-text">ps</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#sed"><span class="nav-number">1.1.39.</span> <span class="nav-text">sed</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#sed%E7%9A%84%E9%80%89%E9%A1%B9%E3%80%81%E5%91%BD%E4%BB%A4%E3%80%81%E6%9B%BF%E6%8D%A2%E6%A0%87%E8%AE%B0"><span class="nav-number">1.1.39.1.</span> <span class="nav-text">sed的选项、命令、替换标记</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#sort"><span class="nav-number">1.1.40.</span> <span class="nav-text">sort</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#tar"><span class="nav-number">1.1.41.</span> <span class="nav-text">tar</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#umount"><span class="nav-number">1.1.42.</span> <span class="nav-text">umount</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#vi"><span class="nav-number">1.1.43.</span> <span class="nav-text">vi</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#dd"><span class="nav-number">1.1.44.</span> <span class="nav-text">dd</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#traceroute"><span class="nav-number">1.1.45.</span> <span class="nav-text">traceroute</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#zcat"><span class="nav-number">1.1.46.</span> <span class="nav-text">zcat</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#parted"><span class="nav-number">1.1.47.</span> <span class="nav-text">parted</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#fing"><span class="nav-number">1.1.48.</span> <span class="nav-text">fing</span></a></li></ol></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4"><span class="nav-number">1.</span> <span class="nav-text">Linux常用命令</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#awk"><span class="nav-number">1.0.1.</span> <span class="nav-text">awk</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#awk%E5%91%BD%E4%BB%A4%E6%A0%BC%E5%BC%8F%E5%92%8C%E9%80%89%E9%A1%B9"><span class="nav-number">1.0.1.1.</span> <span class="nav-text">awk命令格式和选项</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#awk%E6%A8%A1%E5%BC%8F%E5%92%8C%E6%93%8D%E4%BD%9C"><span class="nav-number">1.0.1.2.</span> <span class="nav-text">awk模式和操作</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#awk%E8%84%9A%E6%9C%AC%E5%9F%BA%E7%A1%80%E7%BB%93%E6%9E%84"><span class="nav-number">1.0.1.3.</span> <span class="nav-text">awk脚本基础结构</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#awk%E5%86%85%E7%BD%AE%E5%8F%98%E9%87%8F%EF%BC%88%E9%A2%84%E5%AE%9A%E4%B9%89%E5%8F%98%E9%87%8F%EF%BC%89"><span class="nav-number">1.0.1.4.</span> <span class="nav-text">awk内置变量（预定义变量）</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#sh"><span class="nav-number">1.0.2.</span> <span class="nav-text">sh</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#cat"><span class="nav-number">1.0.3.</span> <span class="nav-text">cat</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#chown"><span class="nav-number">1.0.4.</span> <span class="nav-text">chown</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#date"><span class="nav-number">1.0.5.</span> <span class="nav-text">date</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#dmesg"><span class="nav-number">1.0.6.</span> <span class="nav-text">dmesg</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#find"><span class="nav-number">1.0.7.</span> <span class="nav-text">find</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#env"><span class="nav-number">1.0.8.</span> <span class="nav-text">env</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#egrep"><span class="nav-number">1.0.9.</span> <span class="nav-text">egrep</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#hostname"><span class="nav-number">1.0.10.</span> <span class="nav-text">hostname</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#mknod"><span class="nav-number">1.0.11.</span> <span class="nav-text">mknod</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#mktemp"><span class="nav-number">1.0.12.</span> <span class="nav-text">mktemp</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#more"><span class="nav-number">1.0.13.</span> <span class="nav-text">more</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#netstat"><span class="nav-number">1.0.14.</span> <span class="nav-text">netstat</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#stty"><span class="nav-number">1.0.15.</span> <span class="nav-text">stty</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#touch"><span class="nav-number">1.0.16.</span> <span class="nav-text">touch</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#uname"><span class="nav-number">1.0.17.</span> <span class="nav-text">uname</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#basename"><span class="nav-number">1.0.18.</span> <span class="nav-text">basename</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#chgrp"><span class="nav-number">1.0.19.</span> <span class="nav-text">chgrp</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#cp"><span class="nav-number">1.0.20.</span> <span class="nav-text">cp</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#df"><span class="nav-number">1.0.21.</span> <span class="nav-text">df</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#grep"><span class="nav-number">1.0.22.</span> <span class="nav-text">grep</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ipcalc"><span class="nav-number">1.0.23.</span> <span class="nav-text">ipcalc</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#login"><span class="nav-number">1.0.24.</span> <span class="nav-text">login</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#mount"><span class="nav-number">1.0.25.</span> <span class="nav-text">mount</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ping"><span class="nav-number">1.0.26.</span> <span class="nav-text">ping</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#rm"><span class="nav-number">1.0.27.</span> <span class="nav-text">rm</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#sleep"><span class="nav-number">1.0.28.</span> <span class="nav-text">sleep</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#sync"><span class="nav-number">1.0.29.</span> <span class="nav-text">sync</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#chmod"><span class="nav-number">1.0.30.</span> <span class="nav-text">chmod</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#cut"><span class="nav-number">1.0.31.</span> <span class="nav-text">cut</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#echo"><span class="nav-number">1.0.32.</span> <span class="nav-text">echo</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#fgrep"><span class="nav-number">1.0.33.</span> <span class="nav-text">fgrep</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#gzip"><span class="nav-number">1.0.34.</span> <span class="nav-text">gzip</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#kill"><span class="nav-number">1.0.35.</span> <span class="nav-text">kill</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ls"><span class="nav-number">1.0.36.</span> <span class="nav-text">ls</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#mv"><span class="nav-number">1.0.37.</span> <span class="nav-text">mv</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ps"><span class="nav-number">1.0.38.</span> <span class="nav-text">ps</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#sed"><span class="nav-number">1.0.39.</span> <span class="nav-text">sed</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#sed%E7%9A%84%E9%80%89%E9%A1%B9%E3%80%81%E5%91%BD%E4%BB%A4%E3%80%81%E6%9B%BF%E6%8D%A2%E6%A0%87%E8%AE%B0"><span class="nav-number">1.0.39.1.</span> <span class="nav-text">sed的选项、命令、替换标记</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#sort"><span class="nav-number">1.0.40.</span> <span class="nav-text">sort</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#tar"><span class="nav-number">1.0.41.</span> <span class="nav-text">tar</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#umount"><span class="nav-number">1.0.42.</span> <span class="nav-text">umount</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#vi"><span class="nav-number">1.0.43.</span> <span class="nav-text">vi</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#dd"><span class="nav-number">1.0.44.</span> <span class="nav-text">dd</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#traceroute"><span class="nav-number">1.0.45.</span> <span class="nav-text">traceroute</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#zcat"><span class="nav-number">1.0.46.</span> <span class="nav-text">zcat</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#parted"><span class="nav-number">1.0.47.</span> <span class="nav-text">parted</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#fing"><span class="nav-number">1.0.48.</span> <span class="nav-text">fing</span></a></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -732,9 +738,15 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">5</span>
+          <span class="site-state-item-count">4</span>
           <span class="site-state-item-name">posts</span>
         </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
 </div>
@@ -766,7 +778,7 @@
   </span>
   <span class="author" itemprop="copyrightHolder">川味毛血旺</span>
 </div>
-  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a>
   </div>
 
         
@@ -792,7 +804,7 @@
 <script src="/js/motion.js"></script>
 
 
-<script src="/js/schemes/muse.js"></script>
+<script src="/js/schemes/pisces.js"></script>
 
 
 <script src="/js/next-boot.js"></script>
